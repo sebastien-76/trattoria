@@ -33,7 +33,7 @@ a {
 }
 
 section{
-    height:100vh;
+    height:90vh;
     width: 99vw;
 }
 
@@ -53,8 +53,9 @@ section{
 
 .menu_accueil {
     display: flex;
-    height: 10%;
+    height: 10vh;
     width: 100%;
+    position: fixed;
 }
 
 .nom {
