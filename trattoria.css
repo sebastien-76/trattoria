@@ -76,7 +76,6 @@ label, #toggle {
     display: none;
 }
 
-
 .liste_nav {
     display:flex;
     width: 80%;
@@ -299,7 +298,8 @@ label, #toggle {
     }
 
     .navbar {
-    
+        display: flex;
+        flex-direction: column;
     }
 
     label {
@@ -326,6 +326,7 @@ label, #toggle {
         align-items: end;
         width: 70%;
         font-size: 0.9rem;
+        z-index: 9999;
     }
 
     .titre_accueil {
