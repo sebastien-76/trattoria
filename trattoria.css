@@ -1,0 +1,348 @@
+/* Mise en forme sur 'ensemblre d ela page */
+html {
+    font-size: 100%;
+  }
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.titre {
+    font-family: 'Pacifico', cursive;;
+}
+.txt {
+    font-family: 'Roboto', sans-serif;
+}
+.txt_blanc {
+    color:#ffffff;  
+}
+.txt_vert {
+    color: #238137;
+}
+
+.bg_rouge {
+    background-color: #5c0000;
+}
+
+.bg_rouge2 {
+    background-color: #380000;
+}
+
+section{
+    height:100vh;
+    width: 99vw;
+}
+
+.titre_section {
+    display: flex;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+/* Mise en forme de la scetion accueil */
+.accueil {
+    background-image: url("./imgs/pizza-2810589_1920.jpg");
+    background-size:  100vw 100vh;
+}
+
+.menu_accueil {
+    display: flex;
+    height: 10%;
+    width: 100%;
+}
+
+.nom {
+    display:flex;
+    width: 40%;
+    align-items: center;
+    margin-left: 5%;
+    font-size: 2.5rem;
+}
+
+.navbar {
+    width: 60%;
+}
+
+label, #toggle {
+    display: none;
+}
+
+
+.liste_nav {
+    display:flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.liste_nav>li {
+    list-style-type: none;
+}
+
+.titre_accueil {
+    height: 60%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem;
+}
+
+.ancre {
+    height: 30%;
+    display:flex;
+    justify-content: center;
+    align-items:baseline;
+}
+
+.btn_contact {
+    width: 35%;
+    height: 20% ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: solid #000000 1px;
+    font-size: 2rem;
+    transition: all 1s ease;
+}
+
+.btn_contact:hover,
+.btn_contact:active  {
+    background-color: #238137;
+    color: #242424;
+}
+
+/* Mise en form de la section carte */
+
+.carte {
+    display: flex;
+    flex-direction: column;
+}
+
+.titre_plat {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.taille {
+    width: 30%;
+    font-size: 2rem
+}
+
+.img_plat {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img_plat>img {
+    width: 30%;
+}
+
+.liste_plat {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    color: #242424
+    
+}
+
+.plats {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.plat {
+    width: 90%;
+    display: flex;
+}
+
+.nom_plat{
+    width: 85%;
+}
+
+.prix{
+    width: 15%;
+}
+
+
+/* Mise en form de la section services */
+
+.grid_container {
+  display: grid;
+  height: 85%;
+  justify-content: space-evenly;
+  align-content: space-around;
+  grid-template-columns: repeat(2, 25%);
+  grid-template-rows: repeat(3, 30%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    line-height: 0;
+    transition: all 0.5s ease;
+}
+
+.container:hover,
+.container:active {
+    transform: scale(1.1);
+}
+
+.un{
+    background-image: url("./imgs/pizza-5349414_1920.jpg");
+    background-size: cover;
+}
+
+.quatre {
+    background-image: url("./imgs/market-3916964_1920.jpg");
+    background-size: cover;
+}
+
+.cinq {
+    background-image: url("./imgs/waiter-5513560_1920.jpg");
+    background-size: cover;
+}
+
+/* Mise en form de la section contact */
+.contact{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.coordonnees {
+    width: 50%;
+    height: 90% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.infos {
+    line-height: 0;
+    display: flex;
+    width: 70%;
+    height: 30%;
+}
+.icone {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone>img{
+    width: 100%;
+}
+
+.txt_coordonnees {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.map {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map > img {
+    width: 80%;
+}
+
+/* Mediaqueries */
+@media screen AND (max-width: 768px) {
+    section{
+        height:60vh;
+        width: 99vw;
+    }
+
+    .titre_section {
+        font-size: 1.5rem;
+    }
+
+    .nom {
+        font-size: 1.5rem;
+    }
+
+    label {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin: 0 auto;
+        cursor: pointer;
+        margin-right: 4vw;
+    }
+
+    .material-symbols-outlined {
+        font-size: 7vh ;
+    }
+
+    .liste_nav {
+        display: none;
+    }
+
+    #toggle:checked + .liste_nav {
+        display: flex;
+        flex-direction: column;
+            align-items: end;
+        width: 70%;
+        font-size: 0.9rem;
+    }
+
+    .titre_accueil {
+        font-size: 2.5rem;
+    }
+
+    .btn_contact {
+        font-size: 1rem;
+    }
+
+    .taille {
+        font-size: 1.2rem;
+    }
+    .liste_plat {
+        font-size: 0.7rem;
+    }
+
+    .container {
+        font-size: 0.4rem;
+    }
+
+    .coordonnees {
+        width: 40%;
+    }
+
+    .map {
+        width: 60%;
+    }
+
+    .coordonnees {
+        height: 70%;
+    }
+    .txt_coordonnees {
+        font-size: 0.7rem;
+    }
+}
