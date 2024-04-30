@@ -1,7 +1,8 @@
 /* Mise en forme sur 'ensemblre d ela page */
 html {
     font-size: 100%;
-  }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -15,12 +16,15 @@ a {
     font-family: 'Pacifico', cursive;
     margin: 0;
 }
+
 .txt {
     font-family: 'Roboto', sans-serif;
 }
+
 .txt_blanc {
-    color:#ffffff;  
+    color: #ffffff;
 }
+
 .txt_vert {
     color: #238137;
 }
@@ -33,9 +37,9 @@ a {
     background-color: #380000;
 }
 
-section{
-    height:100vh;
-    width: 99vw;
+section {
+    height: 100vh;
+    width: 100vw;
 }
 
 .titre_section {
@@ -49,7 +53,7 @@ section{
 /* Mise en forme de la scetion accueil */
 .accueil {
     background-image: url("./imgs/pizza-2810589_1920.jpg");
-    background-size:  100vw 100vh;
+    background-size: 100vw 100vh;
 }
 
 .menu_accueil {
@@ -60,7 +64,7 @@ section{
 }
 
 .nom {
-    display:flex;
+    display: flex;
     width: 40%;
     align-items: center;
     margin-left: 5%;
@@ -72,12 +76,13 @@ section{
     display: flex;
 }
 
-label, #toggle {
+label,
+#toggle {
     display: none;
 }
 
 .liste_nav {
-    display:flex;
+    display: flex;
     width: 80%;
     justify-content: space-evenly;
     align-items: center;
@@ -90,7 +95,7 @@ label, #toggle {
 
 .titre_accueil {
     height: 70%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 4.5rem;
@@ -98,15 +103,15 @@ label, #toggle {
 
 .ancre {
     height: 30%;
-    display:flex;
+    display: flex;
     justify-content: center;
-    align-items:baseline;
+    align-items: baseline;
 }
 
 .btn_contact {
     width: 35%;
-    height: 20% ;
-    display:flex;
+    height: 20%;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
@@ -116,7 +121,7 @@ label, #toggle {
 }
 
 .btn_contact:hover,
-.btn_contact:active  {
+.btn_contact:active {
     background-color: #238137;
     color: #242424;
 }
@@ -128,32 +133,19 @@ label, #toggle {
     flex-direction: column;
 }
 
+.titre_carte {
+    margin-bottom: -0.5em;
+}
+
+.liste_carte {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
 .titre_plat {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-}
-
-.taille {
-    width: 30%;
-    font-size: 2rem
-}
-
-.img_plat {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.img_plat>img {
-    width: 30%;
-}
-
-.liste_plat {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 1.5rem;
-    color: #242424
-    
+    margin: 0 auto;
 }
 
 .plats {
@@ -163,29 +155,51 @@ label, #toggle {
     justify-content: space-evenly;
 }
 
+.plats img {
+    width: 100%;
+
+}
+
 .plat {
-    width: 90%;
     display: flex;
+    flex-direction: column;
 }
 
-.nom_plat{
-    width: 85%;
+.taille {
+    width: 30%;
+    font-size: 2rem;
+    text-align: center;
 }
 
-.prix{
+.liste_tarifs {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    color: #242424
+}
+
+.nom_plat {
+    width: 75%;
+}
+
+.prix {
     width: 15%;
+    text-align: right;
+    margin-right: 2em;
 }
 
 
 /* Mise en form de la section services */
 
 .grid_container {
-  display: grid;
-  height: 80%;
-  justify-content: space-evenly;
-  align-content: space-around;
-  grid-template-columns: repeat(2, 25%);
-  grid-template-rows: repeat(3, 30%);
+    display: grid;
+    height: 80%;
+    justify-content: space-evenly;
+    align-content: space-around;
+    grid-template-columns: repeat(2, 25%);
+    grid-template-rows: repeat(3, 30%);
 }
 
 .container {
@@ -203,7 +217,7 @@ label, #toggle {
     transform: scale(1.1);
 }
 
-.un{
+.un {
     background-image: url("./imgs/pizza-5349414_1920.jpg");
     background-size: cover;
 }
@@ -219,7 +233,7 @@ label, #toggle {
 }
 
 /* Mise en form de la section contact */
-.contact{
+.contact {
     height: 70%;
     width: 100%;
     display: flex;
@@ -229,7 +243,7 @@ label, #toggle {
 
 .coordonnees {
     width: 50%;
-    height: 90% ;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -242,6 +256,7 @@ label, #toggle {
     width: 70%;
     height: 30%;
 }
+
 .icone {
     width: 20%;
     display: flex;
@@ -249,7 +264,7 @@ label, #toggle {
     justify-content: center;
 }
 
-.icone>img{
+.icone>img {
     width: 100%;
 }
 
@@ -270,7 +285,7 @@ label, #toggle {
     align-items: center;
 }
 
-.map > img {
+.map>img {
     width: 70%;
 }
 
@@ -284,13 +299,14 @@ label, #toggle {
 
 /* Mediaqueries */
 @media screen AND (max-width: 768px) {
-    section{
-        height:60vh;
+    section {
+        height: 100vh;
         width: 99vw;
     }
 
     .titre_section {
         font-size: 1.5rem;
+        height: 15%;
     }
 
     .nom {
@@ -313,14 +329,14 @@ label, #toggle {
     }
 
     .material-symbols-outlined {
-        font-size: 7vh ;
+        font-size: 7vh;
     }
 
     .liste_nav {
         display: none;
     }
 
-    #toggle:checked + .liste_nav {
+    #toggle:checked+.liste_nav {
         display: flex;
         flex-direction: column;
         align-items: end;
@@ -340,12 +356,64 @@ label, #toggle {
     .taille {
         font-size: 1.2rem;
     }
-    .liste_plat {
-        font-size: 0.7rem;
+
+    .carte {
+        height: 220vh;
+    }
+
+    .titre_carte {
+        margin-bottom: 0;
+    }
+
+    .liste_carte {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .plats {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .plats img {
+        width: 95%;
+    }
+
+    .plat {
+        height: 30vh;
+    }
+
+    .liste_tarifs {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    .nom_plat {
+        width: 95%;
+    }
+
+    .prix {
+        width: 5%;
+        margin-right: 0;
+    }
+
+    .services {
+        height: 150vh;
     }
 
     .container {
         font-size: 0.4rem;
+    }
+
+    .grid_container {
+        height: 80%;
+        justify-content: space-evenly;
+        align-content: space-around;
+        grid-template-columns: 90%;
+        grid-template-rows: repeat(6, 20vh);
+        gap: 0.5em;
     }
 
     .coordonnees {
@@ -359,6 +427,7 @@ label, #toggle {
     .coordonnees {
         height: 70%;
     }
+
     .txt_coordonnees {
         font-size: 0.60rem;
     }
